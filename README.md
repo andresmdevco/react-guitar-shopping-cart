@@ -1,16 +1,52 @@
-# React + Vite
+# 🎸 GuitarLA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tienda de guitarras con carrito de compras interactivo construida con React y Vite. Permite explorar un catálogo de 12 guitarras, agregar productos al carrito, ajustar cantidades y ver el total en tiempo real. El carrito persiste entre sesiones gracias a `localStorage`.
 
-Currently, two official plugins are available:
+## 🌐 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 [https://guitarla-andremdevco.netlify.app/](https://guitarla-andremdevco.netlify.app/)
 
-## React Compiler
+## 📁 Archivos principales
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Archivo | Descripción |
+|---|---|
+| `App.jsx` | Componente raíz. Gestiona el estado del carrito y expone las funciones de control |
+| `Header.jsx` | Header con carrito desplegable, tabla de productos y total calculado |
+| `Guitar.jsx` | Tarjeta de producto con imagen, nombre, precio y botón para agregar al carrito |
+| `db.js` | Base de datos local con el catálogo de 12 guitarras |
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
+
+## ✨ Características
+
+- **Catálogo de guitarras** — 12 productos con imagen, nombre, descripción y precio
+- **Carrito desplegable** — Accesible desde el header, muestra los productos seleccionados con imagen y precio
+- **Control de cantidad** — Botones para aumentar o disminuir unidades por ítem (mín. 1 — máx. 5)
+- **Eliminación de productos** — Botón para remover un ítem individual del carrito
+- **Vaciado del carrito** — Botón para limpiar todos los productos de una sola vez
+- **Total en tiempo real** — Calculado con `useMemo` a partir de la cantidad y precio de cada ítem
+- **Persistencia con localStorage** — El carrito se mantiene al recargar la página
+- **Lazy initializer en `useState`** — El carrito lee `localStorage` solo en el primer renderizado
+
+## 📚 Conceptos practicados
+
+- Gestión de estado con `useState` y lazy initializer
+- Estado derivado con `useMemo` para evitar recálculos innecesarios
+- Persistencia del carrito con `useEffect` — guarda el estado en `localStorage` ante cada cambio
+- Comunicación entre componentes mediante props y funciones callback
+- Manipulación de arreglos con métodos funcionales (`map`, `filter`, `findIndex`, `reduce`)
+- Arquitectura de componentes en React con separación de responsabilidades
+
+## 🚀 Cómo ejecutar el proyecto
+
+```bash
+git clone https://github.com/andresmdevco/react-guitar-shopping-cart.git
+cd react-guitar-shopping-cart
+npm install
+npm run dev
+```
