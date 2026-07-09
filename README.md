@@ -10,9 +10,10 @@ Tienda de guitarras con carrito de compras interactivo construida con React y Vi
 
 | Archivo | Descripción |
 |---|---|
-| `App.jsx` | Componente raíz. Gestiona el estado del carrito y expone las funciones de control |
+| `App.jsx` | Componente raíz. Consume el hook `useCart` y distribuye el estado a los componentes hijos |
 | `Header.jsx` | Header con carrito desplegable, tabla de productos y total calculado |
 | `Guitar.jsx` | Tarjeta de producto con imagen, nombre, precio y botón para agregar al carrito |
+| `useCart.js` | Custom hook que encapsula toda la lógica y el estado del carrito |
 | `db.js` | Base de datos local con el catálogo de 12 guitarras |
 
 ## 🛠️ Tecnologías utilizadas
@@ -32,6 +33,7 @@ Tienda de guitarras con carrito de compras interactivo construida con React y Vi
 - **Total en tiempo real** — Calculado con `useMemo` a partir de la cantidad y precio de cada ítem
 - **Persistencia con localStorage** — El carrito se mantiene al recargar la página
 - **Lazy initializer en `useState`** — El carrito lee `localStorage` solo en el primer renderizado
+- **Extracción de lógica de estado a un custom hook (`useCart`) para separar lógica de presentación
 
 ## 📚 Conceptos practicados
 
