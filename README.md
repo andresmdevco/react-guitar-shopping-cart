@@ -3,6 +3,7 @@
 Tienda de guitarras con carrito de compras interactivo construida con React y Vite. Permite explorar un catálogo de 12 guitarras, agregar productos al carrito, ajustar cantidades y ver el total en tiempo real. El carrito persiste entre sesiones gracias a `localStorage`.
 
 ## 🌐 Demo
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ca96a94-8e6e-411e-b4ba-864977e461f9/deploy-status)](https://app.netlify.com/projects/guitarla-andremdevco/deploys)
 
 🔗 [https://guitarla-andremdevco.netlify.app/](https://guitarla-andremdevco.netlify.app/)
 
