@@ -1,5 +1,5 @@
 export default function Guitar({ guitar, addToCart }) {
-  const { name, image, description, price } = guitar;
+  const { name, image, description, price } = guitar
 
   return (
     <div className="col-md-6 col-lg-4 my-4 row align-items-center">
@@ -23,5 +23,5 @@ export default function Guitar({ guitar, addToCart }) {
         </button>
       </div>
     </div>
-  );
+  )
 }
