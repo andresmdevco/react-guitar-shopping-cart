@@ -1,6 +1,6 @@
-import Guitar from './components/Guitar'
-import Header from './components/Header'
-import { useCart } from './hooks/useCart'
+import Guitar from './components/Guitar';
+import Header from './components/Header';
+import { useCart } from './hooks/useCart';
 
 function App() {
   const {
@@ -13,7 +13,7 @@ function App() {
     clearCart,
     isEmpty,
     cartTotal,
-  } = useCart()
+  } = useCart();
 
   return (
     <>
@@ -44,7 +44,7 @@ function App() {
         </div>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
