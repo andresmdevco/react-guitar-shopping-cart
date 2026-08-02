@@ -7,7 +7,7 @@ Tienda de guitarras con carrito de compras interactivo construida con React y Vi
 
 🔗 [https://guitarla-andremdevco.netlify.app/](https://guitarla-andremdevco.netlify.app/)
 
-## 🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías Utilizadas
 
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
