@@ -36,7 +36,7 @@ Tienda de guitarras con carrito de compras interactivo construida con React y Vi
 - **Lazy initializer en `useState`** — El carrito lee `localStorage` solo en el primer renderizado
 - **Extracción de lógica de estado a un custom hook (`useCart`) para separar lógica de presentación
 
-## 📚 Conceptos practicados
+## 📚 Conceptos aplicados
 
 - Gestión de estado con `useState` y lazy initializer
 - Estado derivado con `useMemo` para evitar recálculos innecesarios
